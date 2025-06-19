@@ -13,3 +13,10 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* Tüm TWK Lausanne fontları için font smoothing */
+body, html, * {
+  font-family: 'TWK Lausanne', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
