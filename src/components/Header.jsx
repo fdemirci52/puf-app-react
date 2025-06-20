@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/header.css";
 
 function Header() {
-  const [count, setCount] = useState(3);
+  const [count, setCount] = useState(0);
 
   return (
     <header className="header">

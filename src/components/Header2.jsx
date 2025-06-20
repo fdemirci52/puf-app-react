@@ -27,7 +27,7 @@ function Header2() {
             {/* Bildirim rozeti */}
             {count > 0 && (
               <span className="absolute top-[1.9vw] right-[1.9vw] bg-[#FF0090] text-white rounded-full w-[3.6vw] h-[3.6vw] flex items-center justify-center text-[2.2vw] font-sans">
-                <span className="mb-[0.2vw]">{count}</span>
+                <span>{count}</span>
               </span>
             )}
           </button>
