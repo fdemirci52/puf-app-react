@@ -1,17 +1,17 @@
-import Header from './components/Header';
-import HeaderPreview from './components/HeaderPreview';
-import Header2 from './components/Header2'; 
-import Rotate from './components/Rotate';
+import Header from './components/Header/Header';
+import HeaderPreview from './components/Header/HeaderPreview';
+import Header2 from './components/Header/Header2'; 
 import WorldAppTop from './components/WorldAppTop';
+import TokenHeader from './components/Token/TokenHeader';   
 
 function App() {
   return (
     <div>
+      <TokenHeader />
       <WorldAppTop />
       <Header />
       <Header2 />
       <HeaderPreview />
-      <Rotate />
     </div>
   );
 }
