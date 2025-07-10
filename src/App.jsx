@@ -8,10 +8,10 @@ function App() {
   return (
     <div>
       <TokenHeader />
+      <HeaderPreview />
       <WorldAppTop />
       <Header />
       <Header2 />
-      <HeaderPreview />
     </div>
   );
 }

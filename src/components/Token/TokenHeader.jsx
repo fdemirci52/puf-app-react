@@ -23,7 +23,11 @@ const UserProfileCard = ({
       <div 
         className="absolute inset-0 z-10"
         style={{
-          background: "linear-gradient(180deg,rgb(0, 0, 0) 0%, rgba(0,0,0,1) 100%)",
+          background: `
+            linear-gradient(180deg, rgba(0,0,0,0) 4%, rgba(0,0,0,1) 100%),
+            linear-gradient(180deg, rgba(0,0,0,0) 4%, rgba(0,0,0,1) 100%),
+            linear-gradient(180deg, rgba(0,0,0,0) 4%, rgba(0,0,0,1) 100%)
+          `
         }}
       />
       <div className="relative z-20 w-full h-full">
@@ -34,31 +38,31 @@ const UserProfileCard = ({
                 <img src="/icons/upload.svg" alt="Upload Icon" className="w-[26px] h-[26px]" />
               </button>
               <button className="w-[37px] h-[37px] p-0 flex items-center justify-center bg-black/20 rounded-3xl">
-                <img src="/icons/more.svg" alt="More Icon" className="w-[15px] h-[15px]" />
+                <img src="/icons/more.svg" alt="More Icon" className="w-[23px] h-[23px]" />
               </button>
             </div>
           </div>
         </div>
         <div className="flex flex-col h-[148px] items-center justify-between px-3 w-full">
           <div className="flex items-end justify-between w-full">
-            <div className="w-[72px] h-[72px] rounded-none overflow-hidden bg-white">
+            <div className="w-[72px] h-[72px] rounded-[16px] overflow-hidden bg-white">
               <img src={tokenImage} alt="Token" className="w-full h-full object-cover" />
             </div>
-            <div className="inline-flex items-start gap-2">
+            <div className="inline-flex items-start gap-2 h-[29px]">
               <div className="inline-flex flex-col items-end gap-[3px]">
                 <div className="flex items-center justify-end gap-1.5 w-full">
-                  <span className="h-[13px] px-[4.15px] py-[2.77px] bg-[#34c75933] rounded-[3px] flex items-center gap-[3px]">
+                  <span className="h-[14px] px-[4.15px] py-[2.77px] bg-[#34c75933] rounded-[3px] flex items-center gap-[3px]">
                     <span className="text-[#34c759] text-[10px] tracking-[-0.30px] font-sans font-400">{points}</span>
-                    <img src="/icons/coin.svg" alt="Points Icon" className="w-[9.69px] h-[9.69px]" />
+                    <img src="/icons/rank.svg" alt="Points Icon" className="w-[8px] h-[8px]" />
                   </span>
-                  <span className="text-[#a5a9a6] text-xs tracking-[-0.36px] font-sans font-400">{role}</span>
+                  <span className="text-[#a5a9a6] text-xs leading-[13px] tracking-[-0.36px] font-sans font-400">{role}</span>
                 </div>
-                <div className="w-[76px] h-[13px] text-white text-xs text-right tracking-[-0.36px] font-sans font-400">{username}</div>
+                <div className="w-[76px] h-[13px] text-white text-xs leading-[13px] text-right tracking-[-0.36px] font-sans font-400 flex items-center justify-end">
+                  {username}
+                </div>
               </div>
-              <div className="flex w-[27.79px] h-[27.79px] items-center justify-center bg-[#222222] rounded-[4.28px] border border-[#ffffff33]">
-                <div className="relative w-[18.53px] h-[13.08px] bg-cover" style={{ backgroundImage: `url('/icons/vite.svg')` }}>
-                  <img src="/icons/vector.svg" alt="Vector" className="absolute top-1.5 left-1.5 w-0.5 h-[3px]" />
-                  <img src="/icons/vector.svg" alt="Vector" className="absolute top-[5px] left-[9px] w-0.5 h-[3px]" />
+              <div className="flex w-[30px] h-[30px] items-center justify-center bg-[#222222] rounded-[4.28px] border border-[#ffffff33]">
+                <div className="relative w-[18.53px] h-[13.08px] bg-cover" style={{ backgroundImage: `url('/icons/mascot.svg')` }}>
                 </div>
               </div>
             </div>
