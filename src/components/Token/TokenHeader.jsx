@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-const UserProfileCard = ({
-  username = "magicdonjuan",
+const CreatorProfileCard = ({
+  creatorname = "magicdonjuan",
   role = "Creator",
   points = "40",
   title = "GIGAMEW",
@@ -58,7 +58,7 @@ const UserProfileCard = ({
                   <span className="text-[#a5a9a6] text-[3.08vw] leading-[3.33vw] tracking-[-0.09vw] font-sans font-400">{role}</span>
                 </div>
                 <div className="w-[19.49vw] h-[3.33vw] text-white text-[3.08vw] leading-[3.33vw] text-right tracking-[-0.09vw] font-sans font-400 flex items-center justify-end">
-                  {username}
+                  {creatorname}
                 </div>
               </div>
               <div className="flex w-[7.69vw] h-[7.69vw] items-center justify-center bg-[#222222] rounded-[1.1vw] border border-[#ffffff33]">
@@ -82,4 +82,4 @@ const UserProfileCard = ({
   );
 };
 
-export default UserProfileCard;
+export default CreatorProfileCard;
